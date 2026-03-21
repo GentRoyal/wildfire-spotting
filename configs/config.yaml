@@ -1,0 +1,17 @@
+region:
+  name: iberian_peninsula
+  bbox:
+    north: 44.0
+    south: 36.0
+    west: -9.5
+    east: 3.5
+
+data:
+  start_year: 2015
+  end_year: 2023
+  resolution: 0.25
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  external: data/external
