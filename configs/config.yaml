@@ -7,11 +7,18 @@ region:
     east: 3.5
 
 data:
-  start_year: 2015
-  end_year: 2023
+  start_year: 2020
+  end_year: 2025
   resolution: 0.25
 
 paths:
   raw: data/raw
   processed: data/processed
   external: data/external
+
+modeling:
+  target: fire_within_72h
+  positive_class_weight: 30
+  eval_metric: f2
+  decision_threshold: 0.3  # to be tuned
+  cv_strategy: temporal
