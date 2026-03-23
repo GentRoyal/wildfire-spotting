@@ -60,4 +60,7 @@ def download_firms(year: int, month: int, config: dict):
         logger.warning("No fire detections found for this period")
 if __name__ == "__main__":
     config = load_config()
-    download_firms(year=2022, month=7, config=config)
+
+    for year in range(2020, 2026):
+        for month in range(1, 13):
+            download_firms(year=year, month=month, config=config)

@@ -75,4 +75,8 @@ def download_era5(year: int, month: int, config: dict):
 
 if __name__ == "__main__":
     config = load_config()
-    download_era5(year=2022, month=7, config=config)
+
+    # Download 2020-2022
+    for year in range(2020, 2026):
+        for month in range(1, 13):
+            download_era5(year=year, month=month, config=config)
