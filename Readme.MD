@@ -127,8 +127,8 @@ Portugal has one of the highest fire-to-land-area ratios in Europe. The 2022 fir
 
 - [x] ERA5 atmospheric data ingestion
 - [x] NASA FIRMS fire detection ingestion
-- [ ] EFFIS fire perimeter ingestion
-- [ ] Feature engineering pipeline
+- [x] EFFIS fire perimeter ingestion
+- [x] Feature engineering pipeline
 - [ ] Model training and evaluation
 - [ ] FastAPI serving layer
 - [ ] Docker containerization
